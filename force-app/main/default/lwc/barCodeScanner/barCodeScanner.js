@@ -7,6 +7,7 @@ export default class BarcodeScannerExample extends LightningElement {
    scannedBarcode = '';
 // When component is initialized, detect whether to enable Scan button
    connectedCallback() {
+      console.log('Jai bhai sahab');
       this.myScanner = getBarcodeScanner();
       if (this.myScanner == null || !this.myScanner.isAvailable()) {
         this.scanButtonDisabled = true;
